@@ -1,14 +1,38 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+ *{
     margin: 0;
     padding: 0;
 }
+.menu{
+    background: rgb(255, 0, 0);
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.menu ul li a{
+    color: black;
+    padding: 15px 25px;
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+.menu ul li a:hover{
+    color: rgb(255, 0, 0);
+    background: rgb(0, 68, 255);
+}
+
 .baba{
     display: flex;
     justify-content: space-around;
 }
 .sely{
     background-color: aqua;
-    color: black;
+    color: black; 
     width: 30%;
     padding: 25px;
     box-sizing: border-box;
@@ -48,6 +72,7 @@
 .team-members{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .member{
     width: 24%;
@@ -56,4 +81,44 @@
 .member img{
     width: 100%;
 }
-.member h4{}
+.member h4{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    background: rgb(212, 0, 255);
+}
+
+.box{
+    height: 350px;
+    width: 600px;
+    background-color: rgb(12, 240, 0);
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-box-1{
+    background: rgb(255, 0, 217);
+    color: black;
+    width: 100px;
+    height: 100px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-box-1 span{
+    font-size: 30px;
+}
+.inner-box-2{
+    background: rgb(0, 82, 245);
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-box-2 span{
+    font-size: 30px;
+}
